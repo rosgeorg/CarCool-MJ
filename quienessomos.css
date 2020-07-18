@@ -1,0 +1,23 @@
+html, body {
+    font-family: 'Raleway', sans-serif;
+    height: 100%;
+    width: 100%;
+}
+
+.box{
+    background-image: url(/fondo2.png);
+    height: 100%;
+    background-size: cover;
+}
+
+.box #quienessomos {
+    padding: 5rem;
+}
+
+@media screen and (max-width:720px){
+
+    .box {
+       justify-content: center; 
+    }
+
+}
