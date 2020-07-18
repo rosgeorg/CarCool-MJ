@@ -1,0 +1,22 @@
+html, body {
+    font-family: 'Raleway', sans-serif;
+    height: 100%;
+    width: 100%;
+}
+
+.cotizador {
+    background-image: url(./fondo.png); 
+    background-size: cover;
+    height: 100%;
+}
+
+@media screen and (max-width:720px){
+
+    .class-7{
+       justify-content: center;
+       margin-left: 0px;
+       columns: 5;
+
+    }
+
+}

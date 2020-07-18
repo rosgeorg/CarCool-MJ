@@ -6,46 +6,145 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
     <title>CarCool</title>
 </head>
 
 <body>
     <header>
         <!-- Inicio Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light s-top">
-            <a class="Logo" href="#"></a>
-            <a class="home" href="#">Home</a>
-            <span class="navbar-text" style=justify-content:flex-end;>
-                ¿Quiénes somos?
-            </span>
-            </div>
+        <nav class="navbar" style='background-color: white; width:100%;'>
+            <a class="navbar-brand" href="#" style="color: #40201D;">
+                <img src="https://www.creativefabrica.com/wp-content/uploads/2019/04/Car-icon-by-Zafreeloicon-580x386.jpg"
+                    width="70" height="50">
+                Home
+            </a>
+            <a class="nav-link" href="/quienessomos.html" style="font-size: 1.5rem; color: #40201D;"> 
+                ¿Quiénes somos?</a>
         </nav>
-        <!-- Fin Navbar -->
     </header>
-    
-    <!-- Inicio Hero Section -->
-    <section id='hero-section'>
+    <!-- Fin Navbar -->
 
-    </section>
+    <!-- Inicio Cotizador  -->
+    <div class="cotizador">
+    <div class="container">
+
+    <div id="titulo">
+        <div class="col-7" style='padding-top: 40px; color: #40201D; text-align:center; margin-left: 500px; '>
+            <h1 class='bold-text' style='font-weight: bold;'>COMPRA TU <br> NAVE HOY</h1>
+            <h4 class='bold-text'>COTIZA AQUÍ</h4>
+        </div>
+    </div>
+
+        <div id='formulario' class="col-5" style='padding-top: 40px; padding-bottom: 30px;'>
+                <h3 style="color: #40201D; font-weight: bold;">MARCA</h3>
+                <div class="btn-group btn-group-toggle" data-toggle="buttons" id='bla'>
+                    <label class="btn btn-secondary active round-border"
+                        style="background-color:#E58486; color:white; border: none; border-radius: 72px;">
+                        <input type="radio" name="marca" id="option1" value='Ford' checked> <span>FORD</span>
+                    </label>
+                    <label class="btn btn-secondary round-border ml-3"
+                        style="background-color:#E58486; color:white; border: none; border-radius: 72px;">
+                        <input type="radio" name="marca" id="option2" value='Chevrolet'><span>CHEVROLET</span>
+                    </label>
+                    <label class="btn btn-secondary round-border ml-3"
+                        style="background-color:#E58486; color:white; border: none; border-radius: 72px;">
+                        <input type="radio" name="marca" id="option3" value='Nissan'><span>NISSAN</span>
+                    </label>
+                </div>
+
+                <h3 class='mt-3' style="color: #40201D; font-weight: bold;">MODELO</h3>
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-secondary active round-border"
+                        style="background-color:#E58486; color:white; border: none; border-radius: 72px;">
+                        <input type="radio" name="modelo" id="option1" value='2019' checked><span>2019</span>
+                    </label>
+                    <label class="btn btn-secondary ml-5 round-border"
+                        style="background-color:#E58486; color:white; border: none; border-radius: 72px;">
+                        <input type="radio" name="modelo" id="option2" value='2020'><span>2020</span>
+                    </label>
+                </div>
+
+                <h3 class='mt-3' style="color: #40201D; font-weight: bold;">PRESUPUESTO</h3>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">$</span>
+                    </div>
+                    <input type="number" min="15000" max="150000" value="15000" class="form-control" id='presupuesto'
+                        aria-label="Amount (to the nearest dollar)">
+                    <div class="input-group-append">
+                        <span class="input-group-text">.00</span>
+                    </div>
+                </div>
+
+                <h3 class='mt-3' style="color: #40201D; font-weight: bold;">CAJA DE VELOCIDADES</h3>
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-secondary active round-border"
+                        style="background-color:#E58486; color:white; border: none; border-radius: 72px;">
+                        <input type="radio" name="transmision" id="option1" value='auto' checked><span>AUTOMÁTICA</span>
+                    </label>
+                    <label class="btn btn-secondary ml-5 round-border"
+                        style="background-color:#E58486; color:white; border: none; border-radius: 72px;">
+                        <input type="radio" name="transmision" id="option2" value='manual'><span>MANUAL</span>
+                    </label>
+                </div>
+
+                <div class='d-flex justify-content-center'>
+                    <button type="button" style="background-color:#E58486; border-radius: 72px;"
+                        class='d-flex justify-content-center btn round-border mt-5 btn-cotizar' id='cotizar-btn'><span
+                            style="color: #40201D; font-weight: bold;">COTIZAR</span>
+                    </button>
+                </div>
+        </div>
+    </div>
+    </div>
+
+        <!-- Fin Cotizador -->
+
+        <!-- Inicio Cards -->
+        <div class="container">
+            <div class="row m-2">
+                <div class="card"
+                    style="width: 18rem; border-radius: 30px; border: none; background-color: #E58486; color:#40201D">
+                    <img class="card-img-top" src="https://cdn.worldvectorlogo.com/logos/nissan-6.svg"
+                        alt="Card image cap" style="padding: 40px;">
+                    <div class="card-body" style="padding: 20px;">
+                        <h5 class="card-title" style="font-weight: bold;">Modelo: </h5>
+                        <p class="card-text">Marca: </p>
+                        <p class="card-text">Modelo: </p>
+                        <p class="card-text">Precio: </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            <!--Fin Cards -->
+
+            <!-- Footer  -->
+        <div class="container-fluid">
+            <footer class="page-footer font-small"
+                style="background-color: #40201D; color:white; padding: 10px; width: 100%;">
+                <div class="row">
+                    <p class="footer-copyright text-left py-3 ml-3"> 2020© Todos los derechos reservados</p>
+                    <p class="footer-copyright align-items: flex-end py-3 mr-4"> Dev.F - Melania Tapia/Jorge Salas</p>
+                </div>
+            </footer>
+        </div>
+            <!-- Fin Footer  -->
 
 
 
-
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-        crossorigin="anonymous"></script>
-    <script src='main.js'></script>
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+                integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+                crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+                integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+                crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+                integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+                crossorigin="anonymous"></script>
+            <script src='main.js'></script>
 </body>
-<footer>
-
-</footer>
 
 </html>
