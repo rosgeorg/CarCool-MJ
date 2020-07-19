@@ -14,30 +14,30 @@
 <body>
     <header>
         <!-- Inicio Navbar -->
-        <nav class="navbar" style='background-color: white; width:100%;'>
+        <nav class="navbar fixed-top" style='background-color: white; width:100%;'>
             <a class="navbar-brand" href="#" style="color: #40201D;">
                 <img src="https://www.creativefabrica.com/wp-content/uploads/2019/04/Car-icon-by-Zafreeloicon-580x386.jpg"
                     width="70" height="50">
                 Home
             </a>
-            <a class="nav-link" href="/quienessomos.html" style="font-size: 1.5rem; color: #40201D;"> 
+            <a class="nav-link" href="/quienessomos.html" style="font-size: 1.5rem; color: #40201D;">
                 ¿Quiénes somos?</a>
         </nav>
     </header>
     <!-- Fin Navbar -->
 
     <!-- Inicio Cotizador  -->
-    <div class="cotizador">
-    <div class="container">
+    <div class="cotizador" style='padding-top: 60px;'>
+        <div class="container">
 
-    <div id="titulo">
-        <div class="col-7" style='padding-top: 40px; color: #40201D; text-align:center; margin-left: 500px; '>
-            <h1 class='bold-text' style='font-weight: bold;'>COMPRA TU <br> NAVE HOY</h1>
-            <h4 class='bold-text'>COTIZA AQUÍ</h4>
-        </div>
-    </div>
+            <div id="titulo">
+                <div class="col-7" style='padding-top: 40px; color: #40201D; text-align:center; margin-left: 500px; '>
+                    <h1 class='bold-text' style='font-weight: bold;'>COMPRA TU <br> NAVE HOY</h1>
+                    <h4 class='bold-text'>COTIZA AQUÍ</h4>
+                </div>
+            </div>
 
-        <div id='formulario' class="col-5" style='padding-top: 40px; padding-bottom: 30px;'>
+            <div id='formulario' class="col-5">
                 <h3 style="color: #40201D; font-weight: bold;">MARCA</h3>
                 <div class="btn-group btn-group-toggle" data-toggle="buttons" id='bla'>
                     <label class="btn btn-secondary active round-border"
@@ -96,55 +96,49 @@
                             style="color: #40201D; font-weight: bold;">COTIZAR</span>
                     </button>
                 </div>
-        </div>
-    </div>
-    </div>
-
-        <!-- Fin Cotizador -->
-
-        <!-- Inicio Cards -->
-        <div class="container">
-            <div class="row m-2">
-                <div class="card"
-                    style="width: 18rem; border-radius: 30px; border: none; background-color: #E58486; color:#40201D">
-                    <img class="card-img-top" src="https://cdn.worldvectorlogo.com/logos/nissan-6.svg"
-                        alt="Card image cap" style="padding: 40px;">
-                    <div class="card-body" style="padding: 20px;">
-                        <h5 class="card-title" style="font-weight: bold;">Modelo: </h5>
-                        <p class="card-text">Marca: </p>
-                        <p class="card-text">Modelo: </p>
-                        <p class="card-text">Precio: </p>
-                    </div>
-                </div>
             </div>
         </div>
+    </div>
 
-            <!--Fin Cards -->
+    <!-- Fin Cotizador -->
 
-            <!-- Footer  -->
-        <div class="container-fluid">
-            <footer class="page-footer font-small"
-                style="background-color: #40201D; color:white; padding: 10px; width: 100%;">
+    <!-- Inicio Cards -->
+    <div class="container">
+        <div class="row m-2" id='cards-container'>
+
+        </div>
+    </div>
+
+    <!--Fin Cards -->
+
+    <!-- Footer  -->
+
+        <footer class="page-footer font-small"
+            style="background-color: #40201D; color:white; padding: 10px; width: 100%;">
+            <div class='container-fluid'>
                 <div class="row">
                     <p class="footer-copyright text-left py-3 ml-3"> 2020© Todos los derechos reservados</p>
                     <p class="footer-copyright align-items: flex-end py-3 mr-4"> Dev.F - Melania Tapia/Jorge Salas</p>
                 </div>
-            </footer>
-        </div>
-            <!-- Fin Footer  -->
+            </div>
+        </footer>
+ 
+    <!-- Fin Footer  -->
 
 
 
-            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-                integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-                crossorigin="anonymous"></script>
-            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-                integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-                crossorigin="anonymous"></script>
-            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-                integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-                crossorigin="anonymous"></script>
-            <script src='main.js'></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <script src='logos.js'></script>
+    <script src='bd.js'></script>
+    <script src='main.js'></script>
 </body>
 
 </html>

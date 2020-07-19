@@ -5,18 +5,23 @@ html, body {
 }
 
 .cotizador {
-    background-image: url(./fondo.png); 
+    background-image: url(./fondo.png);
     background-size: cover;
     height: 100%;
 }
 
-@media screen and (max-width:720px){
+.auto-cards {
+    width: 18rem;
+    border-radius: 30px;
+    border: none;
+    background-color: #E58486;
+    color: #40201D
+}
 
-    .class-7{
-       justify-content: center;
-       margin-left: 0px;
-       columns: 5;
-
+@media screen and (max-width:720px) {
+    .class-7 {
+        justify-content: center;
+        margin-left: 0px;
+        columns: 5;
     }
-
 }
